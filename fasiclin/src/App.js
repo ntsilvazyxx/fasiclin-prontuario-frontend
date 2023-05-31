@@ -7,26 +7,49 @@ function App() {
   return (
     <div className="App">
       <div className='template'>
-        <div className='main-login'>
-        <img className="img"src={imagens}alt='fasipe-cuiaba.png'/>
-            <h2>Prontuário Médico</h2>
-              <strong><p>CPF</p></strong>
-                  <MaskedInput />
-                     <strong><p>Nome completo</p></strong>
-                        <strong>
-                          <input disabled="text" placeholder=""></input></strong>
-                            <strong>
-                              <p>Telefone</p>
-                              </strong>
-                                <label for="telefone"></label>
-                                     <input type="tel" id="telefone" className="input-padrao" 
-                                       required placeholder="(00) 0000-0000"></input>
-                                       <form>
-                                       <input type="submit" value="Encaminhar"></input>
-                                       </form>
-
+        <form action='' method='post'>
+          <div className='main-login'>
+            <img className="img" src={imagens} alt='fasipe-cuiaba.png' />
+            <div className='left-login'>
+              <div className=''>
+                <p>Id do cliente</p>
+                <input placeholder=""></input>
+              </div>
+              <div className=''>
+                <p>Id Especialidade</p>
+                <input placeholder=""></input>
+              </div>
+              <div className=''>
+                <p>Id Procedimento</p>
+                <input placeholder=""></input>
+              </div>
+            </div>
+            <div className='right-login'>
+              <div>
+                <p>Id Profissional de Saúde</p>
+                <input placeholder=""></input>
+              </div>
+              <div>
+                <p>Autenticado</p>
+                <input placeholder=""></input>
+              </div>
+              <div>
+                <p>Link Docs/Ris/Pacs</p>
+                <input placeholder=""></input>
+              </div>
+            </div>
+            <div className='text-login'>
+              <textarea id="story" name="story"
+                rows="5" cols="33" value="Descrição do Prontuario">
+              </textarea>
+            </div>
+            <input id="date" type="date"></input>
+            <div class="container-button">
+              <button type='submit' class="button-success button-large">Enviar</button>
+            </div>
           </div>
-       </div>
+        </form>
+      </div>
     </div>
   );
 }

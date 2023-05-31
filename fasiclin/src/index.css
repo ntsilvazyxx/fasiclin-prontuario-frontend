@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family:'Poppins';
+  font-family: 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #15803d;
@@ -9,14 +9,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-    
+
 }
-.main-login{
+
+.main-login {
   background-color: white;
   border: 1px solid silver;
   height: 500px;
   width: 800px;
-  border-radius:50px;
+  border-radius: 50px;
   text-align: center;
   padding: 30px;
   align-self: center;
@@ -24,7 +25,21 @@ code {
   margin-top: 50px;
 
 }
-input{
+
+.left-login {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+
+}
+
+.right-login {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+input {
   margin-top: 4px;
   width: 200px;
   border-radius: 50px;
@@ -34,20 +49,23 @@ input{
   background-color: silver;
 }
 
-form [type="submit"]{
+form [type="submit"] {
   height: 30px;
   width: 20%;
-  background-color: #16a34a;
+  background-color: silver;
   font-weight: bold;
   color: white;
   margin-top: 30px;
 }
-img{
+
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+
 }
+
 label {
   font-family: sans-serif;
   font-size: 1rem;
@@ -58,9 +76,67 @@ select {
   font-size: bold;
   padding: 2px;
   height: 30px;
-  
+
 
 }
 
+textarea {
+  background-color: silver;
+  align-items: center;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 30px;
+}
 
+.container-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 0 12px 0 12px;
+}
+
+.button-success {
+  background: rgb(28, 184, 65);
+  /* this is a green */
+}
+
+.button-error {
+  background: rgb(202, 60, 60);
+  /* this is a maroon */
+}
+
+.button-warning {
+  background: rgb(223, 117, 20);
+  /* this is an orange */
+}
+
+.button-secondary {
+  background: rgb(66, 184, 221);
+  /* this is a light blue */
+}
+
+.button-xsmall {
+  font-size: 70%;
+}
+
+.button-small {
+  font-size: 85%;
+}
+
+.button-large {
+  font-size: 100%;
+}
+
+.button-xlarge {
+  font-size: 125%;
+}
 
